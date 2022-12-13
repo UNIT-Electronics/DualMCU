@@ -12,7 +12,7 @@ For more details, check out the product pages at
 
 Unit DualMCU brings the Raspberry Pi RP2040 microcontroller plus an Espressif ESP32 WROOM chip in a simple one module, make the most of the dual core 32-bit Arm® Cortex®-M0+ to make Internet of Things projects with Bluetooth® and Wi-Fi connectivity. 
 
-DualMCU has been thought of as a mix between two 32-bit microprocessors: a Raspberry RP2040 cortex M0+ running at 133 Mhz and an Espresiff ESP32 running up to 240 MHz, in this way we implement all the power of both microcontrollers in a single development card. With a PCB size of 36mm x 84mm and using surface mount technology, four programmable cores with wireless functions and features are found with very low power consumption.
+DualMCU has been thought of as a mix between two 32-bit microprocessors: a Raspberry RP2040 cortex M0+ running at 133 Mhz and an Espressif ESP32 running up to 240 MHz, in this way we implement all the power of both microcontrollers in a single development card. With a PCB size of 36mm x 84mm and using surface mount technology, four programmable cores with wireless functions and features are found with very low power consumption.
 
 ### Applications.
 
