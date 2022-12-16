@@ -22,4 +22,6 @@ Internet of Things (IoT), prototyping, machine learning, evaluation & developmen
 ### Support. 
 
 DualMCU is supported in the  Arduino development environment and Python Integrated Development Environment (IDE) such as Thonny via an interactive prompt (REPL) to execute commands immediately in mycropython and circuitpython programming language.
+
+Arduino Package RP2040 Index - JSON:
 https://github.com/Rabadan-uelectronics/DualMCU-RP2040
