@@ -4,7 +4,7 @@
 Click here to purchase one from the UNIT Electronics shop</a>
 
 <a href="https://github.com/UNIT-Electronics/DualMCU/tree/main/Examples">
-C++ & Micropython Examples files for the UNIT DualMCU. 
+C++ & Micropython Examples files for the UNIT DualMCU. </a>
 
 For more details, check out the product pages at
 * https://uelectronics.com/
