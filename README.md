@@ -3,9 +3,8 @@
 <a href="https://uelectronics.com/"><img src="Hardware/EU0002-DUALMCU V3.1.jpg?raw=false" width="1000px"><br/>
 Click here to purchase one from the UNIT Electronics shop</a>
 
-<a href="https://github.com/UNIT-Electronics/DualMCU/tree/main/Examples">
-C++ & Micropython Examples files for the UNIT DualMCU. </a></a>
-
+<a href="https://github.com/UNIT-Electronics/DualMCU/tree/main/Examples"><br/>
+C++ & Micropython Examples files for the UNIT DualMCU.</a>
 
 For more details, check out the product pages at
 * https://uelectronics.com/
