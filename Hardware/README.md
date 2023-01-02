@@ -1,5 +1,10 @@
 
-[# Schematics](https://github.com/UNIT-Electronics/DualMCU/blob/main/Hardware/UE0002_DualMCUv30_Schematic.pdf)
+# Schematics
+
+<a href="https://github.com/UNIT-Electronics/DualMCU/blob/main/Hardware/UE0002_DualMCUv30_Schematic.pdf"><img src="Hardware/EU0002-DualMCU V7.png?raw=false" width="1000px"><br/>
+Click here to purchase one from the UNIT Electronics shop</a>
+
+
 
 
 
