@@ -1,6 +1,6 @@
-============================================================================================================
-[Schematics](https://github.com/UNIT-Electronics/DualMCU/blob/main/Hardware/UE0002_DualMCUv30_Schematic.pdf)
-============================================================================================================
+==========
+Schematics
+==========
 
 [C++ & Micropython Examples files for the UNIT DualMCU.](https://github.com/UNIT-Electronics/DualMCU/tree/main/Examples) 
 
