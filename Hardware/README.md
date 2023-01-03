@@ -20,6 +20,15 @@
 
 **Front View**<img src="Resources/Front View DualMCU Topology.jpg?raw=false" width="800px"><br/>
 
+[[ring-bom-table]]
+[cols=3]
+|===
+| *Item* | *Quantity* | Details
+| Breadboard | 1 | generic part
+| Raspberry Pi Pico | 1 | https://www.raspberrypi.com/products/raspberry-pi-pico/
+| NeoPixel Ring | 1 | https://www.adafruit.com/product/1463
+|===
+
 **Back View**<img src="Resources/Back View DualMCU Topology.jpg?raw=false" width="800px"><br/>
 
 
