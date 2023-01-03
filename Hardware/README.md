@@ -20,8 +20,11 @@
 
 **Front View**<img src="Resources/Front View DualMCU Topology.jpg?raw=false" width="800px"><br/>
 
-| Ref. | Description | Ref. | Description
-|  U1  | Breadboard  |  U4  | generic part
+| Column 1 | Column 2 | Column 3 |
+|----------|----------|----------|
+| Row 1    | Data 1   | Data 2   |
+| Row 2    | Data 3   | Data 4   |
+
 
 **Back View**<img src="Resources/Back View DualMCU Topology.jpg?raw=false" width="800px"><br/>
 
