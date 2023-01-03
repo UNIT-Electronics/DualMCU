@@ -1,4 +1,4 @@
-![](https://github.com/UNIT-Electronics/DualMCU)
+### MCP2515 CAN Library for the DualMCU-RP2040 microcontrller board PCB 
 
 This library is wrote for MCP2515, we test it with DualMCU RP2040.
 
