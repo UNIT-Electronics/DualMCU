@@ -31,5 +31,5 @@ Additionally, support for the Arduino development environment allows you to use 
 
 |***Arduino Package RP2040 Index - JSON*** | **https://github.com/Rabadan-uelectronics/DualMCU-RP2040-Arduino-Package** |
 |----------|----------|
-|***Arduino Package ESP32 Index - JSON***  | **https://github.com/Rabadan-uelectronics/DualMCU-ESP32-Arduino-Package**  |
+| ***Arduino Package ESP32 Index - JSON*** |  **https://github.com/Rabadan-uelectronics/DualMCU-ESP32-Arduino-Package** |
 
