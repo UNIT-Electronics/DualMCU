@@ -1,5 +1,5 @@
 
-# Hadware DualMCU 
+# Hadware [DualMCU](https://github.com/UNIT-Electronics/DualMCU) 
 
 
 <a href="https://github.com/UNIT-Electronics/DualMCU/blob/main/Hardware/UE0002_DualMCUv30_Schematic.pdf"><img src="Resources/Schematics_icon.jpg?raw=false" width="500px"><br/># Schematics</a>
