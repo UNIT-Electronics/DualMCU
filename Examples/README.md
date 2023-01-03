@@ -17,13 +17,13 @@ Turns on an LED (Connect to Pin 0 (IO0) or other ESP32 digital PIN on the DualMC
 
 ### 01.ADC
 
-__ADC.ino__
+[__ADC.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/ESP32/01.ADC/ReadAnalogVoltage/ReadAnalogVoltage.ino)
 
 These example reads de value of a potentiometer that is connected to GPIO 04 (Analog ADC2_CH0).
 
 ### 02.UART
 
-__UART.ino__
+[__UART.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/ESP32/02.UART/UART/UART.ino)
 
  ESP32 has 3 serial ports: UART0, UART1, UART2:
  * UART0 -> Is connected to serial communication between ESP32 and computer, used for loading Arduino code to ESP32. GPIO 1 - RX, GPIO 3 - TX
@@ -32,35 +32,35 @@ __UART.ino__
 
 ### 03.TOUCH 
 
-__CapacitiveTouch.ino__
+[__CapacitiveTouch.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/ESP32/03.TOUCH/CapacitiveTouch/CapacitiveTouch.ino)
 
 Read a capacitive touch sensor:
 * The DualMCU has three available  capacitive touch sensors: T0(GPIO4),T2(GPIO2) and T3(GPIO15). 
 
 ### 04.I2C
 
-__I2C_Max17043.ino__
+[__I2C_Max17043.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/ESP32/04.I2C/I2C_Max17043/I2C_Max17043.ino)
 
 I2C MAX17043, MAX17048:
 Battery Fuel Gauge Monitor wired to the I2C JST2 connector on the DualMCU for ESP32 MCU.
 
 ### 05.MicroSD
 
-__DirectoryFunctions.ino__
+[__DirectoryFunctions.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/ESP32/05.MicroSd/DirectoryFunctions/DirectoryFunctions.ino)
 
 Example use of chdir(), ls(), mkdir(), and  rmdir().
 
-__QuickStart.ino__
+[__QuickStart.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/ESP32/05.MicroSd/QuickStart/QuickStart.ino)
 
 Quick hardware test for SPI card access.
 
-__SdInfo.ino__
+[__SdInfo.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/ESP32/05.MicroSd/SdInfo/SdInfo.ino)
 
 This program attempts to initialize an SD card and analyze its structure.
 
 ### 06.PWM
 
-__PWM_and_Bluetooth.ino__
+[__PWM_and_Bluetooth.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/ESP32/06.PWM/PWM_and_Bluetooth/PWM_and_Bluetooth.ino)
 PWM & Bluetooth:
  * This example demostrate the use of PWM function and Bluetooth, 
  * Also show the configuration of the RGB led placed on the Dual MCU
@@ -70,7 +70,7 @@ PWM & Bluetooth:
 
 ### 07.CAN
 
-__CANBUS_ESP32_NATIVE-RECEIVE.ino__
+[__CANBUS_ESP32_NATIVE-RECEIVE.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/ESP32/07.CAN/CANBUS_ESP32_NATIVE-RECEIVE/CANBUS_ESP32_NATIVE-RECEIVE.ino)
 This is a Controller Area Network (CAN) interface configuration for an ESP32 microcontroller as a receiver node:
 * The CAN driver is configured to operate in normal mode and use a speed of 500 kbit/s for these examples, but it can be changed.  
 * The GPIO pins 26 and 25 are set to transmit and receive, respectively, and should be connected to a physical layer transceiver chip for the CAN protocol such as the [TJA1050T](https://uelectronics.com/producto/tja1050t-transceptor-can-de-alta-velocidad/) or [TCAN1051HVD](https://uelectronics.com/producto/tcan1051hvd-transceptor-can-smd/). These chips allow the microcontroller to interface with the CAN bus and communicate with other devices on the network. The transceiver handles the low-level signaling and data transmission on the bus, allowing the microcontroller to focus on higher-level tasks like protocol handling and message processing. It is important to choose a transceiver that is compatible with the voltage level of your microcontroller, so be sure to select a chip that works with 3.3v because that is the voltage level of the DUALMCU system. 
