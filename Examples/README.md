@@ -5,7 +5,7 @@ C++ & MicroPython-Examples for DualMCU RP2040 + ESP32
 
 This repo features examples for MicroPython and Arduino for DualMCU RP2040 + ESP32.
 
-> ### C++  Basics
+> ### *C++  Basics*
 
 ### ESP32:
 
@@ -137,13 +137,13 @@ This example is a Controller Area Network (CAN) interface configuration for the 
 * It only reads and processes messages, but does not send messages.
 
 __Send_CAN2515.ino__
-This example is a Controller Area Network (CAN) interface configuration for the RP2040 microcontroller to communicate with a device using an MCP2515 CAN transceiver via the SPI port as a transmiter node:  
-* The code sets up the MCP2515 to work at a speed of 500 kbit/s but it can be changed. 
+This example is a Controller Area Network (CAN) interface configuration for the RP2040 microcontroller to communicate with a device using an MCP2515 CAN transceiver via the SPI port as a transmitter node:  
+* The code sets up the MCP2515 to work at a speed of 500 kbit/s, but it can be changed. 
 * It sends two different CAN messages in a loop. The messages are arrays of 8 bytes each, named "stmp0" and "stmp1", and are sent to two different CAN IDs, 0x000 and 0x001, respectively. 
 * The messages are also printed to the serial console. 
-* It only sends messages but does not receive or process them.
+* It only sends messages, but does not receive or process them.
 
-> ### Micropython Basics
+> ### *Micropython Basics*
 
 __RP2040:__
 
