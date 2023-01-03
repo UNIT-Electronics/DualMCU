@@ -5,7 +5,7 @@ C++ & MicroPython-Examples
 
 This repo features examples for MicroPython and Arduino for DualMCU RP2040 + ESP32.
 
-### C++  Basics
+> ### C++  Basics
 
 ### ESP32:
 
@@ -34,8 +34,8 @@ __UART.ino__
 
 __CapacitiveTouch.ino__
 
-Capacitive Touch Sensor:
-* T0(GPIO4),T2(GPIO2) & T3(GPIO15) for DualMCU - ESP3
+Read a capacitive touch sensor:
+* The DualMCU has three available  capacitive touch sensors: T0(GPIO4),T2(GPIO2) and T3(GPIO15). 
 
 ### 04.I2C
 
