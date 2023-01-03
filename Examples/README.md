@@ -9,19 +9,19 @@ This repo features examples for MicroPython and Arduino for DualMCU RP2040 + ESP
 
 ### ESP32:
 
-__00.LEDs__
+### 00.LEDs
 
 __Blink.ino__
 
 Turns on an LED (Connect to Pin 0 (IO0) or other ESP32 digital PIN on the DualMCU) for one second, then off for one second, repeatedly.
 
-__01.ADC__
+### 01.ADC
 
 __ADC.ino__
 
 These example reads de value of a potentiometer that is connected to GPIO 04 (Analog ADC2_CH0).
 
-__02.UART__
+### 02.UART
 
 __UART.ino__
 
@@ -30,14 +30,14 @@ __UART.ino__
  * UART1 -> This pins are internally connected to the SPI flash memory, we can not use UART1 directly without reassigning pins in Arduino IDE
  * UART2 -> GPIO 16 - RX, GPIO 17 - TX
 
-__03.TOUCH__ 
+### 03.TOUCH 
 
 __CapacitiveTouch.ino__
 
 Read a capacitive touch sensor:
 * The DualMCU has three available  capacitive touch sensors: T0(GPIO4),T2(GPIO2) and T3(GPIO15). 
 
-__04.I2C__
+### 04.I2C
 
 __I2C_Max17043.ino__
 
@@ -108,12 +108,10 @@ function.
 ### 04.I2C
 
 __I2C_Max17043.ino__
-
-I2C MAX17043, MAX17048 
+For I2C MAX17043, MAX17048 
 * Battery Fuel Gauge Monitor wired to the I2C JST1 connector on the DualMCU for RP2040 MCU
 
 __TalkingToMyself.ino__
-
 Simple I2C master and slave demo based on  - Earle F. Philhower, III script for Raspberry Pi Pico:
 * Using both onboard I2C interfaces, I2C_0 (Pins: SDA_0 =2, SDA_0 =3) and I2C_1 (Pins: SDA_1 =12, SDA_1 =13) have one master and one slave
 and send data both ways between them
@@ -129,7 +127,6 @@ Connect:
 * DUALMCU GPIO 21 (CS) to MCP2515 (CS)
 
 __RECV_CAN2515.ino__
-
 This example is a Controller Area Network (CAN) interface configuration for the RP2040 microcontroller to communicate with a device using an MCP2515 CAN transceiver via the SPI port as a receiver node:
 * The CAN driver is configured to operate in normal mode and use a speed of 500 kbit/s for these examples, but it can be changed.  
 * The "loop()" function calls the "recv_data()" function, which reads CAN messages from the transceiver and prints them to the console.
@@ -145,15 +142,42 @@ This example is a Controller Area Network (CAN) interface configuration for the 
 
 > ### *Micropython Basics*
 
-RP2040:__
+### RP2040:
 
-__00.blink.py__
+### 00.LEDs
 
-__01.ADC.py__
+__blink.py__
 
-__02.PWM.py__
+Turns Builtin LED (L3) GPIO 25 on for one second, then off for one second, repeatedly.
 
-__03.UART.py__
+### 01.ADC
+
+__ADC.py__
+
+These example obtain the read on ADC Port from RP2040.
+* Analog signal is connected to GPIO 26,27,28 or 29  (Analogs A0,A1,A2,A3) 
+
+### 02.PWM
+
+__PWM.py__
+This code is a simple example of how to use Pulse Width Modulation (PWM) on the microcontroller to control the brightness of an LED connected to Pin 25:
+* The code first constructs a PWM object and sets the frequency to 1000 Hz. 
+* It then enters an infinite loop where it alternately increases and decreases the duty cycle of the PWM signal, with a delay of 1 ms between each change. This causes the LED to fade in and out.
+* The duty cycle is multiplied by itself in order to create a non-linear brightness change.
+
+### 03.UART
+
+__UART.py__
+Example using UART 0 and 1 on RP2040:
+* Connect TX0 to RX1 and run current script
+
+__serial.py__
+This code is an example of how to use the UART (Universal Asynchronous Receiver/Transmitter) interface on the microcontroller to receive data from another device:
+* The code first initializes the UART with a baud rate of 115200 and then enters an infinite loop.
+* It continually checks if there is any data available in the UART buffer, and if there is, it reads a line of data and tries to decode it as a UTF-8 encoded string. 
+* If the decoding is successful, the decoded string is printed to the console. If it fails, the exception is caught and the program continues. 
+
+
 
 __04.IRQ.py__
 
