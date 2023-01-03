@@ -1,4 +1,4 @@
-C++ & MicroPython-Examples
+C++ & MicroPython-Examples for DualMCU RP2040 + ESP32
 ====================
 
 <img src="Programming.jpg?raw=false" width="900px"><br/>
@@ -90,7 +90,7 @@ __04.I2C__
 
 __07.CAN__
 
-### Micropython Basics
+> ### Micropython Basics
 
 __RP2040:__
 
