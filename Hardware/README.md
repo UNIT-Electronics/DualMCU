@@ -27,6 +27,14 @@
 |  U3  | W25Q16JVUXIQ 2MB Flash IC   |   U6  | AP2112K 3v3 LDO Voltage Regulator |
 |  L1  | Power On LED   |   L2  | Charge LED |
 |  L3  | Builtin LED (GPIO25)   |   L4  | WS2812B LED |
+|  L5  |RGB 2020 LED   |   J1  | Male USB Type C Connector |
+|  PB1  |RP2040 Reset Button   |   PB2  | RP2040 Boot Button |
+|  PB3  |ESP32 Flash Button    |   PB4  | ESP32 Reset Button |
+|  JP1  |RP2040 GPIO Header    |   JP2  | ESP32 GPIO Header |
+|  JP3  |RP2040 (SWD) Debug Header    |   JST1  | RP2040 I2C JST Connector |
+|  JST2  |ESP32 I2C JST Conector   |   JST3  | JST Connector for LiPo Battery |
+|  SW2  |USB Communication Selector   |   SW3  | UART DIP Switch |
+
 
 
 
