@@ -1,6 +1,6 @@
 # DualMCU ESP32+RP2040 microcontroller board PCB
 
-<a href="https://uelectronics.com/"><img src="Hardware/Resources/EU0002-DualMCU V7.jpg?raw=false" width="1000px"><br/>
+<a href="https://uelectronics.com/"><img src="Hardware/Resources/EU0002-DualMCU V7.jpg?raw=false" width="800px"><br/>
 Click here to purchase one from the UNIT Electronics shop</a>
 
 [C++ & Micropython Examples files for the UNIT DualMCU.](https://github.com/UNIT-Electronics/DualMCU/tree/main/Examples)
