@@ -1,0 +1,3 @@
+# C++ Examples for the DualMCU only for RP2040 microcontroller
+
+This repository contains C++ examples specifically designed for the RP2040 microcontroller on the DualMCU board. The examples demonstrate various capabilities of the RP2040 microcontroller and provide a starting point for developing applications using C++. This repository does not include examples for the ESP32 microcontroller on the DualMCU board.
