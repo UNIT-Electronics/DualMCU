@@ -29,9 +29,7 @@ The support for the Micropython IDE includes an interactive console (REPL) for e
 
 Additionally, support for the Arduino development environment allows you to use the tools and extensive community available through Arduino to develop projects with the DualMCU development board. This can be especially useful if you are already familiar with Arduino and want to take advantage of its ease of use and wealth of resources.
 
-Arduino Package RP2040 Index - JSON:
-https://github.com/Rabadan-uelectronics/DualMCU-RP2040-Arduino-Package
+|* Arduino Package RP2040 Index - JSON| https://github.com/Rabadan-uelectronics/DualMCU-RP2040-Arduino-Package |
 
-Arduino Package ESP32 Index - JSON:
-https://github.com/Rabadan-uelectronics/DualMCU-ESP32-Arduino-Package
+|* Arduino Package ESP32 Index - JSON | https://github.com/Rabadan-uelectronics/DualMCU-ESP32-Arduino-Package  |
 
