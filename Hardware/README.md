@@ -1,5 +1,5 @@
 
-<center># Hadware DualMCU</center>
+-># Hadware DualMCU<-
 
 # Schematics
 
