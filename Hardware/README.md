@@ -22,7 +22,7 @@
 
 | Ref. | Description | Ref. | Description
 |----------|----------|----------|-------|
-| Row 1    | Data 1   | Data 2   |
+| U1   | Raspberry pi RP2040 Microcontroller   |  U4  | CH340C USB bus convert IC |
 | Row 2    | Data 3   | Data 4   |
 
 
