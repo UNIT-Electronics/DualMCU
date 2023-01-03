@@ -20,7 +20,7 @@
 
 **Front View**<img src="Resources/Front View DualMCU Topology.jpg?raw=false" width="800px"><br/>
 
-| Column 1 | Column 2 | Column 3 |
+| Ref. | Description | Ref. |
 |----------|----------|----------|
 | Row 1    | Data 1   | Data 2   |
 | Row 2    | Data 3   | Data 4   |
