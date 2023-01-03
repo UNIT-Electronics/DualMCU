@@ -8,6 +8,10 @@
 
 <img src="Resources/DUALMCU-PowerTree.jpg?raw=false" width="1000px"><br/>
 
+# Block Diagram
+
+<img src="Resources/Block Diagram.jpg?raw=false" width="800px"><br/>
+
 # PINOUT
 
 <img src="Resources/EU0002-DUALMCU V3.1.jpg?raw=false" width="1000px"><br/>
