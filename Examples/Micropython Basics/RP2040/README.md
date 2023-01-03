@@ -1,3 +1,5 @@
 # Micropython Examples for the DualMCU RP2040 
 
 This repository contains MicroPython examples for the DualMCU RP2040, a microcontroller board featuring an RP2040 microcontroller. The examples demonstrate various capabilities of the DualMCU board and provide a starting point for developing applications using MicroPython, a Python implementation for microcontrollers.
+
+These MicroPython examples can be easily run and tested on your DualMCU board using Thonny IDE, a simple and user-friendly Python development environment. Thonny provides a convenient way to work with MicroPython on the DualMCU board, allowing you to easily modify the examples to fit your own project needs and debug your code with its powerful debugging tools. Whether you are new to programming or an experienced developer, Thonny is a great choice for working with MicroPython on the DualMCU RP2040 board.
