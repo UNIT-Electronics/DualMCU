@@ -22,8 +22,9 @@
 
 | Ref. | Description | Ref. | Description
 |----------|----------|----------|-------|
-| U1   | Raspberry pi RP2040 Microcontroller   |  U4  | CH340C USB bus convert IC |
-| Row 2    | Data 3   | Data 4   |
+|  U1  | Raspberry pi RP2040 Microcontroller   |   U4  | CH340C USB bus convert IC |
+|  U2  | Espressif ESP32 WROOM Wi-Fi/Bluetooth® Module   |   U5  | MCP73831 Battery Charge Management IC |
+
 
 
 **Back View**<img src="Resources/Back View DualMCU Topology.jpg?raw=false" width="800px"><br/>
