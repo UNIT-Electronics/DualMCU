@@ -76,19 +76,72 @@ This is a Controller Area Network (CAN) interface configuration for an ESP32 mic
 * The GPIO pins 26 and 25 are set to transmit and receive, respectively, and should be connected to a physical layer transceiver chip for the CAN protocol such as the [TJA1050T](https://uelectronics.com/producto/tja1050t-transceptor-can-de-alta-velocidad/) or [TCAN1051HVD](https://uelectronics.com/producto/tcan1051hvd-transceptor-can-smd/). These chips allow the microcontroller to interface with the CAN bus and communicate with other devices on the network. The transceiver handles the low-level signaling and data transmission on the bus, allowing the microcontroller to focus on higher-level tasks like protocol handling and message processing. It is important to choose a transceiver that is compatible with the voltage level of your microcontroller, so be sure to select a chip that works with 3.3v because that is the voltage level of the DUALMCU system. 
 
 
-__RP2040:__
+### RP2040:
 
-__00.Blink.ino__
+### 00.LEDs
 
-__01.ReadAnalogVoltage.ino__
+__Blink.ino__
 
-__02.UART.ino__
+Turns Builtin LED (L3) (GPIO 25) on for one second, then off for one second, repeatedly.
 
-__03.PWM.ino__
+### 01.ADC
 
-__04.I2C__
+__ADC.ino__
 
-__07.CAN__
+These example obtain the read on ADC Port from RP2040.
+* Analog signal is connected to GPIO 26,27,28 or 29  (Analogs A0,A1,A2,A3) 
+
+### 02.UART
+
+__SerialPassthrough.ino__
+
+RP2040 has 2 serial ports: UART0, UART1, this sketch allows you to emulate the serial passthrough behaviour between UART0 and UART1:
+* Connect TX0 to RX1 and RX0 to TX1 on the DualMCU
+
+### 03.PWM
+
+__Fade.ino__
+
+This example shows how to fade an LED on pin 25 - DualMCU Builtin LED (L3) using the analogWrite()
+function.
+
+### 04.I2C
+
+__I2C_Max17043.ino__
+
+I2C MAX17043, MAX17048 
+* Battery Fuel Gauge Monitor wired to the I2C JST1 connector on the DualMCU for RP2040 MCU
+
+__TalkingToMyself.ino__
+
+Simple I2C master and slave demo based on  - Earle F. Philhower, III script for Raspberry Pi Pico:
+* Using both onboard I2C interfaces, I2C_0 (Pins: SDA_0 =2, SDA_0 =3) and I2C_1 (Pins: SDA_1 =12, SDA_1 =13) have one master and one slave
+and send data both ways between them
+* To run, connect GPIO12 to GPIO2, GPIO13 to GPIO3 on a DualMCU board
+
+### 07.CAN
+The RP2040 chip on the DualMCU, which does not have built-in support for the Controller Area Network (CAN) protocol. However, it is possible to add CAN capability to the DualMCU RP2040 by using an external CAN transceiver chip and implementing the CAN protocol in software. There are a number of different CAN transceiver chips available, each with its own unique features and capabilities. Some popular options include the [MCP2515 Can Bus](https://uelectronics.com/producto/mcp2515-arduino-can-bus-spi-tja1050/), [TJA1050T](https://uelectronics.com/producto/tja1050t-transceptor-can-de-alta-velocidad/), the [TCAN1051HVD](https://uelectronics.com/producto/tcan1051hvd-transceptor-can-smd/), and SN65HVD230. To use CAN with the RP2040, you will need to connect the transceiver to the DualMCU's SPI GPIO pins:
+
+Connect: 
+* DUALMCU GPIO 20 (MISO) to MCP2515 (SO)
+* DUALMCU GPIO 19 (MOSI) to MCP2515 (SI)
+* DUALMCU GPIO 18 (SCK) to MCP2515 (SCK)
+* DUALMCU GPIO 21 (CS) to MCP2515 (CS)
+
+__RECV_CAN2515.ino__
+
+This example is a Controller Area Network (CAN) interface configuration for the RP2040 microcontroller to communicate with a device using an MCP2515 CAN transceiver via the SPI port as a receiver node:
+* The CAN driver is configured to operate in normal mode and use a speed of 500 kbit/s for these examples, but it can be changed.  
+* The "loop()" function calls the "recv_data()" function, which reads CAN messages from the transceiver and prints them to the console.
+* If a message is available, the function reads the data and CAN ID of the message and prints them to the console in hexadecimal format.
+* It only reads and processes messages, but does not send messages.
+
+__Send_CAN2515.ino__
+This example is a Controller Area Network (CAN) interface configuration for the RP2040 microcontroller to communicate with a device using an MCP2515 CAN transceiver via the SPI port as a transmiter node:  
+* The code sets up the MCP2515 to work at a speed of 500 kbit/s but it can be changed. 
+* It sends two different CAN messages in a loop. The messages are arrays of 8 bytes each, named "stmp0" and "stmp1", and are sent to two different CAN IDs, 0x000 and 0x001, respectively. 
+* The messages are also printed to the serial console. 
+* It only sends messages but does not receive or process them.
 
 > ### Micropython Basics
 
