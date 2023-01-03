@@ -1,0 +1,3 @@
+# Micropython Examples for the DualMCU ESP32
+
+This repository will soon contain MicroPython examples for the DualMCU ESP32, a microcontroller board featuring an ESP32 microcontroller. Stay tuned for updates on the availability of these examples, which will demonstrate various capabilities of the DualMCU board and provide a starting point for developing applications using MicroPython, a Python implementation for microcontrollers.
