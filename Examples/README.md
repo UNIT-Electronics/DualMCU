@@ -146,20 +146,20 @@ This example is a Controller Area Network (CAN) interface configuration for the 
 
 ### 00.LEDs
 
-__blink.py__
+[__blink.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/00.LEDs/blink.py)
 
 Turns Builtin LED (L3) GPIO 25 on for one second, then off for one second, repeatedly.
 
 ### 01.ADC
 
-__ADC.py__
+[__ADC.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/01.ADC/ADC.py)
 
 These example obtain the read on ADC Port from RP2040.
 * Analog signal is connected to GPIO 26,27,28 or 29  (Analogs A0,A1,A2,A3) 
 
 ### 02.PWM
 
-__PWM.py__
+[__PWM.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/02.PWM/PWM.py)
 This code is a simple example of how to use Pulse Width Modulation (PWM) on the microcontroller to control the brightness of an LED connected to Pin 25:
 * The code first constructs a PWM object and sets the frequency to 1000 Hz. 
 * It then enters an infinite loop where it alternately increases and decreases the duty cycle of the PWM signal, with a delay of 1 ms between each change. This causes the LED to fade in and out.
@@ -167,11 +167,11 @@ This code is a simple example of how to use Pulse Width Modulation (PWM) on the 
 
 ### 03.UART
 
-__UART.py__
+[__UART.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/03.UART/UART.py)
 Example using UART 0 and 1 on RP2040:
 * Connect TX0 to RX1 and run current script
 
-__serial.py__
+[__serial.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/03.UART/serial.py)
 This code is an example of how to use the UART (Universal Asynchronous Receiver/Transmitter) interface on the microcontroller to receive data from another device:
 * The code first initializes the UART with a baud rate of 115200 and then enters an infinite loop.
 * It continually checks if there is any data available in the UART buffer, and if there is, it reads a line of data and tries to decode it as a UTF-8 encoded string. 
@@ -179,38 +179,38 @@ This code is an example of how to use the UART (Universal Asynchronous Receiver/
 
 ### 04.IRQ
 
-__irq.py__
+[__irq.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/04.IRQ/irq.py)
 Hardware interrupt handling:
 * This code imports the Pin class from the machine module. It then creates an instance of the Pin class called p2, initialized with pin number 2, configured as an input pin, and using the internal pull-up resistor. * The code then sets up an interrupt handler for the p2 pin using the irq method. 
 * This interrupt handler will be called whenever a falling edge is detected on the p2 pin, and it will print a message containing the flags associated with the interrupt request.
 
 ### 05.PIO
 
-__pio_1hz.py__
+[__pio_1hz.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/05.PIO/pio_1hz.py)
 
 Example using PIO to blink an Builtin LED and raise an IRQ at 1Hz.
 
-__pio_blink.py__
+[__pio_blink.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/05.PIO/pio_blink.py)
 
 This code imports several modules: time, rp2, and Pin from the machine module. It then defines a function called blink using the asm_pio decorator from the rp2 module. This function sets the value of an output pin called pins to 1, waits for a few cycles, sets the value of pins to 0, and waits again. The wrap_target and wrap statements are used to implement looping behavior for the function.
 
 The code then creates an instance of the StateMachine class from the rp2 module called sm, initialized with the blink function, a frequency of 2000Hz, and an output pin bound to pin 25. The active method is then used to start and stop the state machine, causing the LED to blink for 3 seconds.
 
-__pio_pwm.py__
+[__pio_pwm.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/05.PIO/pio_pwm.py)
 Example of using PIO for PWM, and fading the brightness of an LED.
 
 This code defines a function called pwm_prog using the asm_pio decorator from the rp2 module. It then creates a class called PIOPWM that takes four arguments in its constructor: sm_id, pin, max_count, and count_freq. The PIOPWM class creates an instance of the StateMachine class from the rp2 module called sm, initialized with the pwm_prog function, a frequency of 2 * count_freq, and an output pin bound to pin. The class also has a method called set that sets the value of the output pin.
 
 The code then creates an instance of the PIOPWM class called pwm, initialized with 0 for sm_id, builtin_LED for pin, (1 << 16) - 1 for max_count, and 10_000_000 for count_freq. It then enters an infinite loop, increasing the value of the output pin from 0 to 255 using the set method and delaying for 0.01 seconds between each iteration. This causes the output pin to produce a pulse-width modulated signal.
 
-__pio_ws2812.py__
+[__pio_ws2812.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/05.PIO/pio_ws2812.py)
 Example using PIO to drive a set of on-board WS2812 LED.
 
 This code defines a function called ws2812 using the asm_pio decorator from the rp2 module. It then creates an instance of the StateMachine class from the rp2 module called sm, initialized with the ws2812 function, a frequency of 8000000Hz, and an output pin bound to the NEOP_DIN pin. The code also configures the NEOPWR pin as an output and sets it to 1.
 
 The code then enters an infinite loop that displays a pattern on a number of WS2812 LEDs specified by the NUM_LEDS variable. The pattern cycles through different colors and fades out over time. The colors and brightness of the LEDs are controlled using an array called "ar" containing the RGB values for each LED. The sm.put method is used to send the data in the "ar" array to the sm state machine, which drives the WS2812 LEDs. The loop delays for 50 milliseconds between each iteration.
 
-__neopixel_ring__
+[__neopixel_ring__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/05.PIO/neopixel_ring.py)
 Combination of the PIO WS2812 demo with the Adafruit 'essential' NeoPixel example code to show off color fills, chases and of course a rainbow swirl on a 16-LED ring addapted for the DualMCU RP2040.
 
 * This code defines a function called ws2812 using the asm_pio decorator from the rp2 module. It then creates an instance of the StateMachine class from the rp2 module called sm, initialized with the ws2812 function, a frequency of 8000000Hz, and an output pin bound to the NEOP_DIN pin. 
@@ -224,13 +224,13 @@ Finally, the code enters an infinite loop that repeatedly calls the various func
 
 ### 06.I2C
 
-__I2C.py__
+[__I2C.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/06.I2C/I2C.py)
 
 This example scans for the I2C device address.
 
 ### 07.SPI
 
-__spi.py__
+[__spi.py__](https://github.com/UNIT-Electronics/DualMCU/tree/main/Examples/Micropython%20Basics/RP2040/07.SPI)
 
 Example for SPI 0 settings.
 
@@ -241,7 +241,7 @@ Example for SPI 0 settings.
 
 ### 08.MULTICORE
 
-__multicore.py__
+[__multicore.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/08.MULTICORE/multicore.py)
 This example uses the multicore function on the RP2040.
 
 * Defines a function called task that takes two arguments: n, which specifies the number of times to toggle an LED, and delay, which specifies the time to wait between each toggle.  
@@ -249,7 +249,7 @@ This example uses the multicore function on the RP2040.
 * After defining the task function, the code uses the _thread.start_new_thread function to start a new thread running the task function with the arguments (10, 0.5), which will cause the task function to toggle the led pin 10 times with a 0.5 second delay between each toggle. 
 * This will run concurrently with the rest of the code.
 
-__multicore_semaphore.py__
+[__multicore_semaphore.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/08.MULTICORE/multicore_semaphore.py)
 This example creates a semaphore using multicore task.
 
 * It imports three modules: machine, utime, and _thread and  initializes two pins, led1 and led2, as output pins.
