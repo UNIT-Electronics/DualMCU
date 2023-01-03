@@ -22,7 +22,7 @@ This repository contains UF2 (Universal Firmware Update) files specifically for 
 **To connect an Adafruit PDM microphone module to the RP2040 microcontroller on the DualMCU board, follow these steps:**
 
 1. First, make sure that you have the necessary equipment: an Adafruit PDM microphone module and the DualMCU board with the RP2040 microcontroller.
-2. Locate the GPIO22 and GPIO23 pins on the DualMCU board ([Pinout](https://github.com/UNIT-Electronics/DualMCU/blob/main/Hardware/Resources/EU0002-DUALMCU%20V3.1.jpg). Connect the PDM microphone module to the DualMCU board using the appropriate cables or connectors, following these connections:
+2. Locate the GPIO22 and GPIO23 pins on the DualMCU board [(Pinout)](https://github.com/UNIT-Electronics/DualMCU/blob/main/Hardware/Resources/EU0002-DUALMCU%20V3.1.jpg). Connect the PDM microphone module to the DualMCU board using the appropriate cables or connectors, following these connections:
 
 * DualMCU (3.3V)   to  PDM-MIC (3.3V)
 * DualMCU (GND)    to  PDM-MIC (GND)
@@ -39,5 +39,5 @@ With these steps, you should be able to successfully connect an Adafruit PDM mic
 ### Troubleshooting
 
 __BOOT Mode__  
-o load the UF2 examples onto the RP2040 in the DualMCU, hold down the BOOT switch and quickly press and release the RST switch. Then, release the BOOT switch. This will enter boot mode. Now, simply drag and drop the UF2 file example into the window explorer files that have appeared. ([For more information, see section 5 "Board Operation" of the Product Manual Reference](https://github.com/UNIT-Electronics/DualMCU/blob/main/DualMCU(Product%20Reference%20Manual).pdf))
+o load the UF2 examples onto the RP2040 in the DualMCU, hold down the BOOT switch and quickly press and release the RST switch. Then, release the BOOT switch. This will enter boot mode. Now, simply drag and drop the UF2 file example into the window explorer files that have appeared. ([For more information, *see section 5.2 Step 2)* "Board Operation" of the Product Manual Reference](https://github.com/UNIT-Electronics/DualMCU/blob/main/DualMCU(Product%20Reference%20Manual).pdf)).
 
