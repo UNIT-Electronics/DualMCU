@@ -9,19 +9,19 @@ This repo features examples for MicroPython and Arduino for DualMCU RP2040 + ESP
 
 ### ESP32:
 
-### 00.LEDs
+__00.LEDs__
 
 __Blink.ino__
 
 Turns on an LED (Connect to Pin 0 (IO0) or other ESP32 digital PIN on the DualMCU) for one second, then off for one second, repeatedly.
 
-### 01.ADC
+__01.ADC__
 
 __ADC.ino__
 
 These example reads de value of a potentiometer that is connected to GPIO 04 (Analog ADC2_CH0).
 
-### 02.UART
+__02.UART__
 
 __UART.ino__
 
@@ -30,14 +30,14 @@ __UART.ino__
  * UART1 -> This pins are internally connected to the SPI flash memory, we can not use UART1 directly without reassigning pins in Arduino IDE
  * UART2 -> GPIO 16 - RX, GPIO 17 - TX
 
-### 03.TOUCH 
+__03.TOUCH__ 
 
 __CapacitiveTouch.ino__
 
 Read a capacitive touch sensor:
 * The DualMCU has three available  capacitive touch sensors: T0(GPIO4),T2(GPIO2) and T3(GPIO15). 
 
-### 04.I2C
+__04.I2C__
 
 __I2C_Max17043.ino__
 
@@ -145,7 +145,7 @@ This example is a Controller Area Network (CAN) interface configuration for the 
 
 > ### *Micropython Basics*
 
-__RP2040:__
+RP2040:__
 
 __00.blink.py__
 
