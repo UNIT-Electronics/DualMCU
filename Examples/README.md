@@ -11,7 +11,7 @@ This repo features examples for MicroPython and Arduino for DualMCU RP2040 + ESP
 
 ### 00.LEDs
 
-__Blink.ino__
+[__Blink.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/ESP32/00.LEDs/Blink/Blink.ino)
 
 Turns on an LED (Connect to Pin 0 (IO0) or other ESP32 digital PIN on the DualMCU) for one second, then off for one second, repeatedly.
 
