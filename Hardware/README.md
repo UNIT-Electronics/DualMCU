@@ -18,9 +18,9 @@
 
 # Board Topology
 
-Front View<img src="Resources/Front View DualMCU Topology.jpg?raw=false" width="800px"><br/>
+**Front View**<img src="Resources/Front View DualMCU Topology.jpg?raw=false" width="800px"><br/>
 
-Back View<img src="Resources/Back View DualMCU Topology.jpg?raw=false" width="800px"><br/>
+**Back View**<img src="Resources/Back View DualMCU Topology.jpg?raw=false" width="800px"><br/>
 
 
 [C++ & Micropython Examples files for the UNIT DualMCU.](https://github.com/UNIT-Electronics/DualMCU/tree/main/Examples) 
