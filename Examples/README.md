@@ -7,21 +7,24 @@ This repo features examples for MicroPython and Arduino for DualMCU RP2040 + ESP
 
 ### C++  Basics
 
-__ESP32:__
+### ESP32:
 
 ### 00.LEDs
 
 __Blink.ino__
+
 Turns on an LED (Connect to Pin 0 (IO0) or other ESP32 digital PIN on the DualMCU) for one second, then off for one second, repeatedly.
 
 ### 01.ADC
 
 __ADC.ino__
+
 These example reads de value of a potentiometer that is connected to GPIO 04 (Analog ADC2_CH0).
 
 ### 02.UART
 
 __UART.ino__
+
  ESP32 has 3 serial ports: UART0, UART1, UART2:
  * UART0 -> Is connected to serial communication between ESP32 and computer, used for loading Arduino code to ESP32. GPIO 1 - RX, GPIO 3 - TX
  * UART1 -> This pins are internally connected to the SPI flash memory, we can not use UART1 directly without reassigning pins in Arduino IDE
@@ -30,22 +33,29 @@ __UART.ino__
 ### 03.TOUCH 
 
 __CapacitiveTouch.ino__
+
 Capacitive Touch Sensor:
 * T0(GPIO4),T2(GPIO2) & T3(GPIO15) for DualMCU - ESP3
 
 ### 04.I2C
 
 __I2C_Max17043.ino__
+
 I2C MAX17043, MAX17048:
 Battery Fuel Gauge Monitor wired to the I2C JST2 connector on the DualMCU for ESP32 MCU.
 
 ### 05.MicroSD
 
 __DirectoryFunctions.ino__
+
 Example use of chdir(), ls(), mkdir(), and  rmdir().
+
 __QuickStart.ino__
+
 Quick hardware test for SPI card access.
+
 __SdInfo.ino__
+
 This program attempts to initialize an SD card and analyze its structure.
 
 ### 06.PWM
