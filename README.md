@@ -1,7 +1,7 @@
 # DualMCU ESP32+RP2040 microcontroller board PCB
 
 <a href="https://uelectronics.com/"><img src="Hardware/Resources/EU0002-DualMCU V7.jpg?raw=false" width="800px"><br/>
-Click here to purchase one from the UNIT Electronics shop</a>
+*Click here to purchase one from the UNIT Electronics shop*</a>
 
 For more details, check out the product pages at
 * https://uelectronics.com/
