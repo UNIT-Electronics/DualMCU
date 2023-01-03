@@ -24,6 +24,9 @@
 |----------|----------|----------|-------|
 |  U1  | Raspberry pi RP2040 Microcontroller   |   U4  | CH340C USB bus convert IC |
 |  U2  | Espressif ESP32 WROOM Wi-Fi/Bluetooth® Module   |   U5  | MCP73831 Battery Charge Management IC |
+|  U3  | W25Q16JVUXIQ 2MB Flash IC   |   U6  | AP2112K 3v3 LDO Voltage Regulator |
+|  L1  | Power On LED   |   L2  | Charge LED |
+|  L3  | Builtin LED (GPIO25)   |   L4  | WS2812B LED |
 
 
 
