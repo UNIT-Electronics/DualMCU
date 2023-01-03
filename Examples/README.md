@@ -1,7 +1,7 @@
 C++ & MicroPython-Examples
 ====================
 
-<img src="Hardware/Resources/Programming.jpg?raw=false" width="1000px"><br/>
+<img src="DualMCU/Hardware/Resources/Programming.jpg?raw=false" width="1000px"><br/>
 
 This repo features examples for MicroPython and Arduino for DualMCU RP2040 + ESP32.
 
@@ -25,7 +25,8 @@ __06.PWM_and_Bluetooth.ino__
 
 __07.CAN.ino__
 
-__RP2040__
+
+__RP2040:__
 
 __00.Blink.ino__
 
