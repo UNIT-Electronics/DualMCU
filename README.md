@@ -23,7 +23,11 @@ Internet of Things (IoT), prototyping, machine learning, evaluation & developmen
 
 ### Support. 
 
-DualMCU is supported in the  Arduino development environment and Python Integrated Development Environment (IDE) such as Thonny via an interactive prompt (REPL) to execute commands immediately in mycropython and circuitpython programming language.
+The DualMCU development board is compatible with the Micropython Integrated Development Environment (IDE), such as Thonny, and also with the Arduino development environment. This means that you can use these development environments to program the DualMCU using both the Micropython or Circuitpython programming languages, as well as the Arduino programming language.
+
+The support for the Micropython IDE includes an interactive console (REPL) for executing commands immediately in Micropython and Circuitpython. This allows you to easily and quickly test and debug your code.
+
+Additionally, support for the Arduino development environment allows you to use the tools and extensive community available through Arduino to develop projects with the DualMCU development board. This can be especially useful if you are already familiar with Arduino and want to take advantage of its ease of use and wealth of resources.
 
 Arduino Package RP2040 Index - JSON:
 https://github.com/Rabadan-uelectronics/DualMCU-RP2040-Arduino-Package
