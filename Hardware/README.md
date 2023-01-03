@@ -12,9 +12,16 @@
 
 <img src="Resources/Block Diagram.jpg?raw=false" width="800px"><br/>
 
-# PINOUT
+# Pinout
 
 <img src="Resources/EU0002-DUALMCU V3.1.jpg?raw=false" width="1000px"><br/>
+
+# Board Topology
+
+<img src="Resources/Front View DualMCU Topology.jpg?raw=false" width="800px"><br/>Front View
+
+<img src="Resources/Back View DualMCU Topology.jpg?raw=false" width="800px"><br/>Front View
+
 
 [C++ & Micropython Examples files for the UNIT DualMCU.](https://github.com/UNIT-Electronics/DualMCU/tree/main/Examples) 
 
