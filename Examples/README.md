@@ -80,38 +80,38 @@ This is a Controller Area Network (CAN) interface configuration for an ESP32 mic
 
 ### 00.LEDs
 
-__Blink.ino__
+[__Blink.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/RP2040/examples/00.Blink/Blink.ino)
 
 Turns Builtin LED (L3) (GPIO 25) on for one second, then off for one second, repeatedly.
 
 ### 01.ADC
 
-__ADC.ino__
+[__ReadAnalogVoltage.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/RP2040/examples/01.ADC/ReadAnalogVoltage.ino)
 
 These example obtain the read on ADC Port from RP2040.
 * Analog signal is connected to GPIO 26,27,28 or 29  (Analogs A0,A1,A2,A3) 
 
 ### 02.UART
 
-__SerialPassthrough.ino__
+[__SerialPassthrough.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/RP2040/examples/02.UART/SerialPassthrough/SerialPassthrough.ino)
 
 RP2040 has 2 serial ports: UART0, UART1, this sketch allows you to emulate the serial passthrough behaviour between UART0 and UART1:
 * Connect TX0 to RX1 and RX0 to TX1 on the DualMCU
 
 ### 03.PWM
 
-__Fade.ino__
+[__Fade.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/RP2040/examples/03.PWM/Fade/Fade.ino)
 
 This example shows how to fade an LED on pin 25 - DualMCU Builtin LED (L3) using the analogWrite()
 function.
 
 ### 04.I2C
 
-__I2C_Max17043.ino__
+[__I2C_Max17043.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/RP2040/examples/04.I2C/I2C_Max17043/I2C_Max17043.ino)
 For I2C MAX17043, MAX17048 
 * Battery Fuel Gauge Monitor wired to the I2C JST1 connector on the DualMCU for RP2040 MCU
 
-__TalkingToMyself.ino__
+[__TalkingToMyself.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/RP2040/examples/04.I2C/TalkingToMyself/TalkingToMyself.ino)
 Simple I2C master and slave demo based on  - Earle F. Philhower, III script for Raspberry Pi Pico:
 * Using both onboard I2C interfaces, I2C_0 (Pins: SDA_0 =2, SDA_0 =3) and I2C_1 (Pins: SDA_1 =12, SDA_1 =13) have one master and one slave
 and send data both ways between them
@@ -126,14 +126,14 @@ Connect:
 * DUALMCU GPIO 18 (SCK) to MCP2515 (SCK)
 * DUALMCU GPIO 21 (CS) to MCP2515 (CS)
 
-__RECV_CAN2515.ino__
+[__RECV_CAN2515.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/RP2040/examples/05.CAN/RECV_CAN2515/RECV_CAN2515.ino)
 This example is a Controller Area Network (CAN) interface configuration for the RP2040 microcontroller to communicate with a device using an MCP2515 CAN transceiver via the SPI port as a receiver node:
 * The CAN driver is configured to operate in normal mode and use a speed of 500 kbit/s for these examples, but it can be changed.  
 * The "loop()" function calls the "recv_data()" function, which reads CAN messages from the transceiver and prints them to the console.
 * If a message is available, the function reads the data and CAN ID of the message and prints them to the console in hexadecimal format.
 * It only reads and processes messages, but does not send messages.
 
-__Send_CAN2515.ino__
+[__Send_CAN2515.ino__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/C%2B%2B%20Basics/RP2040/examples/05.CAN/Send_CAN2515/Send_CAN2515.ino)
 This example is a Controller Area Network (CAN) interface configuration for the RP2040 microcontroller to communicate with a device using an MCP2515 CAN transceiver via the SPI port as a transmitter node:  
 * The code sets up the MCP2515 to work at a speed of 500 kbit/s, but it can be changed. 
 * It sends two different CAN messages in a loop. The messages are arrays of 8 bytes each, named "stmp0" and "stmp1", and are sent to two different CAN IDs, 0x000 and 0x001, respectively. 
