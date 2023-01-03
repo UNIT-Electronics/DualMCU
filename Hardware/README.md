@@ -43,7 +43,7 @@
 |  SW1  | Power Switch   |   SB1  | Charge LED Solder Bridge (default disconnected) |
 |  SB2  | VBUS Sense Solder Bridge (default disconnected) |   SB3  | AP2112K 3v3 LDO Voltage Regulator |
 |  SB4  | ESP32 Reset Solder Bridge (default disconnected)   |   SB5  | SCL Signal Selector Solder Bridge for ATECC608A-MAHDA-T (default disconnected)|
-|  SB6  | SDA Signal Selector Solder Bridge forATECC608A-MAHDA-T(default disconnected)   |   B1  | Lipo Battery Solder Pads |
+|  SB6  | SDA Signal Selector Solder Bridge forATECC608A-MAHDA-T (default disconnected)|   B1  | Lipo Battery Solder Pads |
 
 
 
