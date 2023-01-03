@@ -1,7 +1,7 @@
 C++ & MicroPython-Examples
 ====================
 
-<img src="Programming.jpg?raw=false" width="750px"><br/>
+<img src="Programming.jpg?raw=false" width="900px"><br/>
 
 This repo features examples for MicroPython and Arduino for DualMCU RP2040 + ESP32.
 
