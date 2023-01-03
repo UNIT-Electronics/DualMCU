@@ -177,18 +177,88 @@ This code is an example of how to use the UART (Universal Asynchronous Receiver/
 * It continually checks if there is any data available in the UART buffer, and if there is, it reads a line of data and tries to decode it as a UTF-8 encoded string. 
 * If the decoding is successful, the decoded string is printed to the console. If it fails, the exception is caught and the program continues. 
 
+### 04.IRQ
 
+__irq.py__
+Hardware interrupt handling:
+* This code imports the Pin class from the machine module. It then creates an instance of the Pin class called p2, initialized with pin number 2, configured as an input pin, and using the internal pull-up resistor. * The code then sets up an interrupt handler for the p2 pin using the irq method. 
+* This interrupt handler will be called whenever a falling edge is detected on the p2 pin, and it will print a message containing the flags associated with the interrupt request.
 
-__04.IRQ.py__
+### 05.PIO
 
-__05.PIO__
+__pio_1hz.py__
 
-__06.I2C.py__
+Example using PIO to blink an Builtin LED and raise an IRQ at 1Hz.
 
-__07.spi.py__
+__pio_blink.py__
 
-__08.multicore__
+This code imports several modules: time, rp2, and Pin from the machine module. It then defines a function called blink using the asm_pio decorator from the rp2 module. This function sets the value of an output pin called pins to 1, waits for a few cycles, sets the value of pins to 0, and waits again. The wrap_target and wrap statements are used to implement looping behavior for the function.
 
+The code then creates an instance of the StateMachine class from the rp2 module called sm, initialized with the blink function, a frequency of 2000Hz, and an output pin bound to pin 25. The active method is then used to start and stop the state machine, causing the LED to blink for 3 seconds.
+
+__pio_pwm.py__
+Example of using PIO for PWM, and fading the brightness of an LED.
+
+This code defines a function called pwm_prog using the asm_pio decorator from the rp2 module. It then creates a class called PIOPWM that takes four arguments in its constructor: sm_id, pin, max_count, and count_freq. The PIOPWM class creates an instance of the StateMachine class from the rp2 module called sm, initialized with the pwm_prog function, a frequency of 2 * count_freq, and an output pin bound to pin. The class also has a method called set that sets the value of the output pin.
+
+The code then creates an instance of the PIOPWM class called pwm, initialized with 0 for sm_id, builtin_LED for pin, (1 << 16) - 1 for max_count, and 10_000_000 for count_freq. It then enters an infinite loop, increasing the value of the output pin from 0 to 255 using the set method and delaying for 0.01 seconds between each iteration. This causes the output pin to produce a pulse-width modulated signal.
+
+__pio_ws2812.py__
+Example using PIO to drive a set of on-board WS2812 LED.
+
+This code defines a function called ws2812 using the asm_pio decorator from the rp2 module. It then creates an instance of the StateMachine class from the rp2 module called sm, initialized with the ws2812 function, a frequency of 8000000Hz, and an output pin bound to the NEOP_DIN pin. The code also configures the NEOPWR pin as an output and sets it to 1.
+
+The code then enters an infinite loop that displays a pattern on a number of WS2812 LEDs specified by the NUM_LEDS variable. The pattern cycles through different colors and fades out over time. The colors and brightness of the LEDs are controlled using an array called "ar" containing the RGB values for each LED. The sm.put method is used to send the data in the "ar" array to the sm state machine, which drives the WS2812 LEDs. The loop delays for 50 milliseconds between each iteration.
+
+__neopixel_ring__
+Combination of the PIO WS2812 demo with the Adafruit 'essential' NeoPixel example code to show off color fills, chases and of course a rainbow swirl on a 16-LED ring addapted for the DualMCU RP2040.
+
+* This code defines a function called ws2812 using the asm_pio decorator from the rp2 module. It then creates an instance of the StateMachine class from the rp2 module called sm, initialized with the ws2812 function, a frequency of 8000000Hz, and an output pin bound to the NEOP_DIN pin. 
+* The code also configures the NEOPWR pin as an output and sets it to 1.
+* The code then defines a number of functions for controlling a number of WS2812 LEDs specified by the NUM_LEDS variable.
+* The pixels_show function updates the WS2812 LEDs with the current state of an array called ar containing the RGB values for each LED, applying a brightness factor specified by the brightness variable. 
+* The pixels_set and pixels_fill functions modify the values in the ar array. 
+* The color_chase, wheel, and rainbow_cycle functions produce various visual effects on the WS2812 LEDs by updating the values in the ar array and calling the pixels_show function. The code also defines constants for various colors.
+
+Finally, the code enters an infinite loop that repeatedly calls the various functions to produce a sequence of visual effects on the WS2812 LEDs. The loop delays for a short time between each function call.
+
+### 06.I2C
+
+__I2C.py__
+
+This example scans for the I2C device address.
+
+### 07.SPI
+
+__spi.py__
+
+Example for SPI 0 settings.
+
+* This code initializes the cs pin as an output pin and sets it high.
+*  It then initializes the spi variable as an instance of the SPI class from the machine module, configured with a baud rate of 1000000Hz, clock polarity and phase of 1, 8 bits per word, most significant bit first, and the SCK, MOSI, and MISO pins as the clock, master out/slave in, and master in/slave out pins, respectively.
+* The code then sends the string 'test' over the SPI bus using the spi.write method and reads 5 bytes from the bus using the spi.read method. 
+* It then creates a bytearray called buf and uses the spi.write_readinto method to send the string 'out' over the bus and store the received data in the buf array.
+
+### 08.MULTICORE
+
+__multicore.py__
+This example uses the multicore function on the RP2040.
+
+* Defines a function called task that takes two arguments: n, which specifies the number of times to toggle an LED, and delay, which specifies the time to wait between each toggle.  
+* The task function sets the led pin as an output pin and then enters a loop that toggles the led pin n times, waiting delay seconds between each toggle.
+* After defining the task function, the code uses the _thread.start_new_thread function to start a new thread running the task function with the arguments (10, 0.5), which will cause the task function to toggle the led pin 10 times with a 0.5 second delay between each toggle. 
+* This will run concurrently with the rest of the code.
+
+__multicore_semaphore.py__
+This example creates a semaphore using multicore task.
+
+* It imports three modules: machine, utime, and _thread and  initializes two pins, led1 and led2, as output pins.
+* The code defines a function called CoreTask that runs in an infinite loop. Inside the loop, the function acquires a lock using the sLock semaphore and then sleeps for 1 second. 
+* It then turns on led2, sleeps for 2 seconds, turns off led2, and sleeps for another 1 second. After this, it releases the lock and sleeps for 1 second before the loop repeats.
+* The code then starts a new thread running the CoreTask function and enters its own infinite loop. 
+* Inside this loop, the main thread acquires the sLock semaphore, toggles led1, sleeps for 0.15 seconds, sleeps for 1 second, and then releases the sLock semaphore before repeating the loop.
+
+Overall, this code creates a semaphore using the sLock lock object and uses it to synchronize the main thread and the CoreTask thread, allowing them to take turns running and accessing shared resources. The main thread toggles led1 at a rapid rate, while the CoreTask thread turns on and off led2 at a slower rate.
 
 ### Troubleshooting
 
