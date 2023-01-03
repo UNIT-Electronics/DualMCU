@@ -230,7 +230,7 @@ This example scans for the I2C device address.
 
 ### 07.SPI
 
-[__spi.py__](https://github.com/UNIT-Electronics/DualMCU/tree/main/Examples/Micropython%20Basics/RP2040/07.SPI)
+[__spi.py__](https://github.com/UNIT-Electronics/DualMCU/blob/main/Examples/Micropython%20Basics/RP2040/07.SPI/spi.py)
 
 Example for SPI 0 settings.
 
