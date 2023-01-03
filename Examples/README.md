@@ -7,7 +7,7 @@ This repo features examples for MicroPython and Arduino for DualMCU RP2040 + ESP
 
 > ### *C++  Basics*
 
-### ESP32:
+### For ESP32:
 
 ### 00.LEDs
 
@@ -76,7 +76,7 @@ This is a Controller Area Network (CAN) interface configuration for an ESP32 mic
 * The GPIO pins 26 and 25 are set to transmit and receive, respectively, and should be connected to a physical layer transceiver chip for the CAN protocol such as the [TJA1050T](https://uelectronics.com/producto/tja1050t-transceptor-can-de-alta-velocidad/) or [TCAN1051HVD](https://uelectronics.com/producto/tcan1051hvd-transceptor-can-smd/). These chips allow the microcontroller to interface with the CAN bus and communicate with other devices on the network. The transceiver handles the low-level signaling and data transmission on the bus, allowing the microcontroller to focus on higher-level tasks like protocol handling and message processing. It is important to choose a transceiver that is compatible with the voltage level of your microcontroller, so be sure to select a chip that works with 3.3v because that is the voltage level of the DUALMCU system. 
 
 
-### RP2040:
+### For RP2040:
 
 ### 00.LEDs
 
@@ -142,7 +142,7 @@ This example is a Controller Area Network (CAN) interface configuration for the 
 
 > ### *Micropython Basics*
 
-### RP2040:
+### For RP2040:
 
 ### 00.LEDs
 
