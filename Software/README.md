@@ -39,5 +39,5 @@ With these steps, you should be able to successfully connect an Adafruit PDM mic
 ### Troubleshooting
 
 __BOOT Mode__  
-o load the UF2 examples onto the RP2040 in the DualMCU, hold down the BOOT switch and quickly press and release the RST switch. Then, release the BOOT switch. This will enter boot mode. Now, simply drag and drop the UF2 file example into the window explorer files that have appeared. ([For more information, *see section 5.2, Step 2* "Board Operation" of the Product Manual Reference](https://github.com/UNIT-Electronics/DualMCU/blob/main/DualMCU(Product%20Reference%20Manual).pdf)).
+o load the UF2 examples onto the RP2040 in the DualMCU, hold down the BOOT switch and quickly press and release the RST switch. Then, release the BOOT switch. This will enter boot mode. Now, simply drag and drop the UF2 file example into the window explorer files that have appeared. ([For more information, *see "Board Operation" section 5.2, Step 2*  of the Product Manual Reference](https://github.com/UNIT-Electronics/DualMCU/blob/main/DualMCU(Product%20Reference%20Manual).pdf)).
 
