@@ -7,6 +7,10 @@
 
 <img src="Resources/DUALMCU-PowerTree.jpg?raw=false" width="1000px"><br/>
 
+# PINOUT
+
+<img src="Resources/EU0002-DUALMCU V3.1.jpg?raw=false" width="1000px"><br/>
+
 [C++ & Micropython Examples files for the UNIT DualMCU.](https://github.com/UNIT-Electronics/DualMCU/tree/main/Examples) 
 
 For more details, check out the product pages at
