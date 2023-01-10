@@ -18,7 +18,7 @@ DualMCU has been thought of as a mix between two 32-bit microprocessors: a Raspb
 
 ### Applications.
 
-Internet of Things (IoT), prototyping, machine learning, evaluation & development.
+Internet of Things (IoT), prototyping, machine learning, evaluation & development, robotics.
 
 
 ### Support. 
