@@ -14,7 +14,7 @@
 
 # Pinout
 
-<img src="Resources/EU0002-DUALMCU V3.1.jpg?raw=false" width="1000px"><br/>
+<img src="Resources/EU0002-DUALMCU V6.jpg?raw=false" width="1000px"><br/>
 
 # Board Topology
 
