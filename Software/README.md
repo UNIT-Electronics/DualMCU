@@ -26,8 +26,8 @@ This repository contains UF2 (Universal Firmware Update) files specifically for 
 
 * DualMCU (3.3V)   to  PDM-MIC (3.3V)
 * DualMCU (GND)    to  PDM-MIC (GND)
-* DualMCU (GPIO23) to  PDM-MIC (SCL signal)
-* DualMCU (GPIO22) to  PDM-MIC (DAT signal)
+* DualMCU (GPIO12) to  PDM-MIC (SCL signal)
+* DualMCU (GPIO13) to  PDM-MIC (DAT signal)
 
 3. Power on the DualMCU board and the PDM microphone module.
 
