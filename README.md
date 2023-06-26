@@ -1,6 +1,6 @@
 # DualMCU ESP32+RP2040 microcontroller board PCB
 
-<a href="https://uelectronics.com/"><img src="Hardware/Resources/IMG_1658.png?raw=false" width="800px"><br/>
+<a href="https://uelectronics.com/producto/unit-dualmcu-esp32-rp2040-tarjeta-de-desarrollo/"><img src="Hardware/Resources/IMG_1658.png?raw=false" width="800px"><br/>
 *Click here to purchase one from the UNIT Electronics shop*</a>
 
 For more details, check out the product pages at

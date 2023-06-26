@@ -16,13 +16,13 @@ This repository contains UF2 (Universal Firmware Update) files specifically for 
 
 *"It is important to note that using flash_nuke.uf2 will permanently delete any existing firmware and data on the device, so it should be used with caution."*
 
-[# usb_microphone.uf2](https://github.com/UNIT-Electronics/DualMCU/blob/main/Software/UF2_Files/usb_microphone.uf2) is an example file that can be used to transform the DualMCU into a high-performance USB microphone using the RP2040 microcontroller. To use this file, it is necessary to connect a PDM (Pulse Density Modulation) type MEMS microphone, such as the MP34DT05-A, the MP34DT06J, or the Adafruit PDM microphone module MP34DT01-M, to the DualMCU board. This allows the DualMCU to function as an excellent microphone for use in video conferences or simply for entertainment, with very good sound quality. This file is particularly useful for those looking to add microphone functionality to their DualMCU project or to explore the capabilities of the RP2040 microcontroller.
+[# usb_microphone.uf2](https://github.com/UNIT-Electronics/DualMCU/blob/main/Software/UF2_Files/usb_microphone.uf2) is an example file that can be used to transform the DualMCU into a high-performance USB microphone using the RP2040 microcontroller. To use this file, it is necessary to connect a PDM (Pulse Density Modulation) type MEMS microphone, such as the the MP34DT06J, the UNIT PDM MEMS Microphone MP34DT05, or the Adafruit PDM microphone module MP34DT01-M, to the DualMCU board. This allows the DualMCU to function as an excellent microphone for use in video conferences or simply for entertainment, with very good sound quality. This file is particularly useful for those looking to add microphone functionality to their DualMCU project or to explore the capabilities of the RP2040 microcontroller.
 
-<img src="UF2_Files/PDM-Mic.jpg?raw=false" width="200px"><br/> 
-**To connect an Adafruit PDM microphone module to the RP2040 microcontroller on the DualMCU board, follow these steps:**
+<a href="https://github.com/UNIT-Electronics/UNIT-PDM-MEMS-Microphone-Breakout-Guide-UF2#readme"><img src="https://github.com/UNIT-Electronics/DualMCU/blob/main/Software/UF2_Files/AR3631-UNIT-MP34DT05TR-A-Modulo-Microfono-PDM-V2.jpg?raw=false" width="200px"></a>   <img src="UF2_Files/PDM-Mic.jpg?raw=false" width="170px"><br/>
+**To connect an [UNIT MP34DT05TR-A PDM microphone](https://uelectronics.com/producto/unit-mp34dt05tr-a-modulo-microfono-pdm/) or an Adafruit PDM microphone module to the RP2040 microcontroller on the DualMCU board, follow these steps:**
 
 1. First, make sure that you have the necessary equipment: an Adafruit PDM microphone module and the DualMCU board with the RP2040 microcontroller.
-2. Locate the GPIO22 and GPIO23 pins on the DualMCU board [(Pinout)](https://github.com/UNIT-Electronics/DualMCU/blob/main/Hardware/Resources/EU0002-DUALMCU%20V3.1.2.jpg). Connect the PDM microphone module to the DualMCU board using the appropriate cables or connectors, following these connections:
+2. Locate the GPIO12 and GPIO13 pins on the DualMCU board [(Pinout)](https://github.com/UNIT-Electronics/DualMCU/blob/main/Hardware/Resources/EU0002-DUALMCU%20V3.1.2.jpg). Connect the PDM microphone module to the DualMCU board using the appropriate cables or connectors, following these connections:
 
 * DualMCU (3.3V)   to  PDM-MIC (3.3V)
 * DualMCU (GND)    to  PDM-MIC (GND)
